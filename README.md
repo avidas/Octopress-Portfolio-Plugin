@@ -1,7 +1,8 @@
 # Portfolio plugin for Octopress and Jekyll
 
 Add a portfolio section to your Octopress or Jekyll blog.
-This project was forked from [anchetaWen](https://github.com/anchetaWern/portfolio-jekyll-plugin).
+This project was forked from [vephinx](https://github.com/vephinx/Octopress-Portfolio-Plugin), which was forked from [anchetaWen](https://github.com/anchetaWern/portfolio-jekyll-plugin).
+
 
 ### The following modifications were made:
 
