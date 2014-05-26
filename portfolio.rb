@@ -23,7 +23,7 @@ module Jekyll
 
         if File.exists? index_file_path
           link = portfolio_root + "/" + File.basename(project_path)
-          img_files = Dir.glob('main-image.*')
+          img_files = Dir.glob('main-*')
 
           project_yaml = YAML::load(File.read(index_file_path))
 
@@ -78,10 +78,10 @@ module Jekyll
             real_title = title.sub("small-", "")
 
             if(title.index "small-")
-              content += '<a title="' + real_title + '" href="' + img + '"><img src="' + img + '"></a>'
+              content += '<a class="screenshot" title="' + real_title + '" href="' + img + '"><img src="' + img + '"></a>'
             end
             if(title.index "main-")
-              content += '<a title="' + real_title + '" href="' + img + '"><img src="' + img + '"></a>' # remove if you don't need main-* image on the portfolio page.
+              content += '<a class="screenshot" title="' + real_title + '" href="' + img + '"><img src="' + img + '"></a>' # remove if you don't need main-* image on the portfolio page.
             end
           end
         end

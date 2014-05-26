@@ -6,8 +6,9 @@ This project was forked from [vephinx](https://github.com/vephinx/Octopress-Port
 
 ### The following modifications were made:
 
-- Separate directory for images removed.
-- Made more Mac Friendly, to ignore .DS_Store files.
+- Refactored main logic for generating main portfolio list page.
+- Added an optional 'brief' description for each project to display on list page.
+- Small changes to generated html, such as removing 'fancybox' class.
 
 ## How to Use
 
@@ -39,6 +40,7 @@ of the theme that you're using.
 ---
 layout: page
 title: "Project Item 1"
+brief: "Optional brief description of project here."
 date: 2013-02-23 07:21
 comments: false
 sharing: true
